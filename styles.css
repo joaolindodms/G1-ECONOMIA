@@ -454,22 +454,22 @@ a[href="https://retidadadepedido.online/leilao"]::before {
   transition: opacity 0.3s ease;
 }
 
-a[href="https://retidadadepedido.online/leilao"]:hover::before {
+a[href="https://correios-leilao.vercel.app/"]:hover::before {
   opacity: 1;
 }
 
-a[href="https://retidadadepedido.online/leilao"]::after {
+a[href="https://correios-leilao.vercel.app/"]::after {
   content: '➔';
   margin-left: 15px;
   transition: all 0.3s ease;
   display: inline-block;
 }
 
-a[href="https://retidadadepedido.online/leilao"]:hover::after {
+a[href="https://correios-leilao.vercel.app/"]:hover::after {
   transform: translateX(5px);
 }
 
-a[href="https://retidadadepedido.online/leilao"] {
+a[href="https://correios-leilao.vercel.app/"] {
   animation: pulse-glow 2s infinite;
   margin: auto;
 }
