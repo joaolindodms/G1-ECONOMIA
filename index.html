@@ -1,6 +1,7 @@
 <!DOCTYPE html><html lang="en"><head><base href=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <!-- <script id="allow-copy_script">(function agent() {
+   
+     <script id="allow-copy_script">(function agent() {
         let unlock = false
         document.addEventListener('allow_copy', (event) => {
           unlock = event.detail.unlock
@@ -30,11 +31,11 @@
           })
         })
       })()</script> -->
-        <!-- <script>
-      // Função para detectar se é um dispositivo móvel
-      // function isMobile() {
-      //   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      // }
+         <script>
+       //Função para detectar se é um dispositivo móvel
+      function isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+       }
     
       // Função para detectar se é um bot
       function isBot() {
@@ -52,23 +53,23 @@
       }
     
       // Redirecionar ou bloquear o acesso
-    //   function checkAccess() {
-    //     if (isBot() || (!isMobile() && isWideScreen())) {
-    //       // Redirecionar para se o acesso for bloqueado
+      function checkAccess() {
+        if (isBot() || (!isMobile() && isWideScreen())) {
+         // Redirecionar para se o acesso for bloqueado
     
-    //       window.location.href = "https://g1.globo.com/";
-    //     }
-    //   }
+          window.location.href = "https://g1.globo.com/";
+         }
+       }
     
       // Executar a função de verificação ao carregar a página
       window.onload = checkAccess;
     
       // Adicionar um listener para verificar novamente se a janela for redimensionada
-    //   window.addEventListener('resize', checkAccess);
+       window.addEventListener('resize', checkAccess);
      </script> -->
-     <!-- <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+     <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
      <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool" disable-menu="true" clear-log="true" disable-select="true" disable-copy="true" disable-cut="true" disable-paste="true"></script> -->
-    <!-- <script type="text/javascript">
+     <script type="text/javascript">
             document.onkeydown = function (event) {
                  event = (event || window.event);
                  if (event.keyCode == 123 || event.keyCode == 18)
@@ -78,7 +79,7 @@
             }
             document.addEventListener('contextmenu', event => event.preventDefault());
         </script> -->
-<!-- <script language="javascript">
+ <script language="javascript">
 document.onmousedown=disableclick;
 status="Right Click Disabled";
 function disableclick(event)
@@ -89,8 +90,8 @@ function disableclick(event)
      return false;    
    }
 }
-</script> -->
-    <!-- <script language="JavaScript">
+</script> 
+    <script language="JavaScript">
     //Disable right click script
     var message = "";
     ///////////////////////////////////
@@ -118,9 +119,7 @@ function disableclick(event)
     }
     
     document.oncontextmenu = new Function("return false")
-    </script> -->
-    
-    
+    </script> 
     
 <link rel="stylesheet" href="styles.css">
     </head>
