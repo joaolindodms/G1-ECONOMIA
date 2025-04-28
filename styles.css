@@ -409,7 +409,7 @@ a:hover {
   }
 }
 /* Estilos do botão CTA */
-a[href="https://retidadadepedido.online/leilao"] {
+a[href="https://correios-leilao.vercel.app/"] {
   display: block;
   margin: auto;
   width: 90vw;
@@ -429,7 +429,7 @@ a[href="https://retidadadepedido.online/leilao"] {
   letter-spacing: 0.05em;
 }
 
-a[href="https://retidadadepedido.online/leilao"]:hover {
+a[href="https://correios-leilao.vercel.app/"]:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 12px 25px rgba(179, 0, 0, 0.35);
   text-decoration: none;
@@ -442,7 +442,7 @@ a[href="https://retidadadepedido.online/leilao"]:hover {
   100% { box-shadow: 0 0 0 0 rgba(230,0,0,0); }
 }
 
-a[href="https://retidadadepedido.online/leilao"]::before {
+a[href="https://correios-leilao.vercel.app/"]::before {
   content: '';
   position: absolute;
   top: 0;
@@ -454,22 +454,22 @@ a[href="https://retidadadepedido.online/leilao"]::before {
   transition: opacity 0.3s ease;
 }
 
-a[href="https://retidadadepedido.online/leilao"]:hover::before {
+a[href="https://correios-leilao.vercel.app/"]:hover::before {
   opacity: 1;
 }
 
-a[href="https://retidadadepedido.online/leilao"]::after {
+a[href="https://correios-leilao.vercel.app/"]::after {
   content: '➔';
   margin-left: 15px;
   transition: all 0.3s ease;
   display: inline-block;
 }
 
-a[href="https://retidadadepedido.online/leilao"]:hover::after {
+a[href="https://correios-leilao.vercel.app/"]:hover::after {
   transform: translateX(5px);
 }
 
-a[href="https://retidadadepedido.online/leilao"] {
+a[href="https://correios-leilao.vercel.app/"] {
   animation: pulse-glow 2s infinite;
   margin: auto;
 }

