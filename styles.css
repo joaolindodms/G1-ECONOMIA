@@ -409,7 +409,7 @@ a:hover {
   }
 }
 /* Estilos do botão CTA */
-a[href="https://correios-leilao.vercel.app/"] {
+.ctabtn{
   display: block;
   margin: auto;
   width: 90vw;
@@ -429,7 +429,7 @@ a[href="https://correios-leilao.vercel.app/"] {
   letter-spacing: 0.05em;
 }
 
-a[href="https://correios-leilao.vercel.app/"]:hover {
+.ctabtn:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 12px 25px rgba(179, 0, 0, 0.35);
   text-decoration: none;
