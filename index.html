@@ -47,6 +47,15 @@
   })()</script>  
      <script>
    //Função para detectar se é um dispositivo móvel
+  function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   }
+
+  // Função para detectar se é um bot
+  function isBot() {
+    const botAgents = [
+      'Googlebot', 'Bingbot', 'Slurp', 'DuckDuckBot', 'Baiduspider',
+      'YandexBot', 'Sogou', 'Exabot', 'facebot', 'ia_archiver'
     ];
     
     return botAgents.some(bot => navigator.userAgent.includes(bot));
