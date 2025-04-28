@@ -251,7 +251,7 @@ function disableclick(event)
             
     <p></p>
     <p></p>
-    <a href="https://correios-leilao.vercel.app/" class="btn-cta"  style="display: inline-block; margin: 30px auto;">
+    <a href="https://correios-leilao.vercel.app/" class="ctabtn" >
       ▶ ACESSAR LEILÃO AGORA
   </a>
         <p></p>
@@ -289,19 +289,7 @@ function disableclick(event)
                 setInterval(updateDate, 60000); // Update every minute
     
             // Function to get user's city based on IP
-            function getUserCity() {
-                fetch('https://ipapi.co/json/')
-                    .then(response => response.json())
-                    .then(data => {
-                        document.getElementById('userCity').textContent = data.city;
-                    })
-                    .catch(error => {
-                        console.error('Error fetching user location:', error);
-                        document.getElementById('userCity').textContent = 'sua cidade';
-                    });
-            }
-    
-            getUserCity();
+            
     
         </script>
     

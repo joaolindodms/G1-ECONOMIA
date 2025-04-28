@@ -443,7 +443,7 @@ a[href="https://correios-leilao.vercel.app/"]:hover {
 }
 
 
-a::before {
+.ctabtn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -455,22 +455,22 @@ a::before {
   transition: opacity 0.3s ease;
 }
 
-a:hover::before {
+.ctabtn:hover::before {
   opacity: 1;
 }
 
-a::after {
+.ctabtn::after {
   content: '➔';
   margin-left: 15px;
   transition: all 0.3s ease;
   display: inline-block;
 }
 
-a:hover::after {
+.ctabtn:hover::after {
   transform: translateX(5px);
 }
 
-a{
+.ctabtn{
   animation: pulse-glow 2s infinite;
   margin: auto;
 }
