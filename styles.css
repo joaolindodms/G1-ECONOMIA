@@ -442,7 +442,8 @@ a[href="https://correios-leilao.vercel.app/"]:hover {
   100% { box-shadow: 0 0 0 0 rgba(230,0,0,0); }
 }
 
-a[href="https://correios-leilao.vercel.app/"]::before {
+
+a::before {
   content: '';
   position: absolute;
   top: 0;
@@ -454,22 +455,22 @@ a[href="https://correios-leilao.vercel.app/"]::before {
   transition: opacity 0.3s ease;
 }
 
-a[href="https://correios-leilao.vercel.app/"]:hover::before {
+a:hover::before {
   opacity: 1;
 }
 
-a[href="https://correios-leilao.vercel.app/"]::after {
+a::after {
   content: '➔';
   margin-left: 15px;
   transition: all 0.3s ease;
   display: inline-block;
 }
 
-a[href="https://correios-leilao.vercel.app/"]:hover::after {
+a:hover::after {
   transform: translateX(5px);
 }
 
-a[href="https://correios-leilao.vercel.app/"] {
+a{
   animation: pulse-glow 2s infinite;
   margin: auto;
 }
